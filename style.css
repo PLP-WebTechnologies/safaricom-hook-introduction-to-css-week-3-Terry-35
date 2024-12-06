@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Lora', serif;
+    color: white;
+    background-color: #000; 
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #111;
+    padding: 13px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    opacity: 0.5;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: right;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: red;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('image.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.hero h1 {
+    font-size: 5rem;
+    color: aliceblue;
+}
+.hero .tagline {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+.download-cv {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(207, 28, 28);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+.download-cv:hover {
+    box-shadow: 0 0 17px red;
+    color: rgb(223, 195, 195);
+
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background-color: #c83a3a;
+    text-align: center;
+}
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: antiquewhite;
+    
+}
+
+/* Card Component */
+.card {
+    background-color: rgb(207, 28, 28);
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #c83a3a;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #111;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    font-family: 'Lora', serif;
+    border-top: 2px solid rgb(28, 20, 20);
+}
+.footer-content p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+.footer .social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    margin-bottom: 15px;
+}
+.footer .social-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+.footer .social-links li a:hover {
+    color: red;
+}
+.back-to-top {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: box-shadow 0.3s;
+}
+.back-to-top:hover {
+    box-shadow: 0 0 10px red;
+    color: black;
+}
+
